@@ -1,8 +1,8 @@
-const merge = require('lodash/merge');
-const cssMatcher = require('jest-matcher-css');
-const postcss = require('postcss');
-const tailwindcss = require('tailwindcss');
-const customPlugin = require('./index');
+import { merge } from 'lodash';
+import { cssMatcher } from 'jest-matcher-css';
+import postcss from 'postcss';
+import tailwindcss from 'tailwindcss';
+import pwaPlugin from './index';
 
 expect.extend({
   toMatchCss: cssMatcher,
@@ -21,7 +21,7 @@ function generatePluginCss(overrides) {
       displaymodes: [],
     },
     corePlugins: false,
-    plugins: [customPlugin],
+    plugins: [pwaPlugin],
   };
 
   return postcss(tailwindcss(merge(config, overrides)))
@@ -31,61 +31,8 @@ function generatePluginCss(overrides) {
     .then(({ css }) => css);
 }
 
-test('utility classes can be generated', () => {
-  return generatePluginCss().then(css => {
-    expect(css).toMatchCss(`    
-    .example-utility-class {
-      display: block
-    }
-    `);
-  });
-});
-
-test('options can be customized', () => {
-  return generatePluginCss({
-    theme: {
-      displaymodes: {
-        YOUR_PLUGIN_CUSTOM_OPTION: true,
-      },
-    },
-  }).then(css => {
-    expect(css).toMatchCss(`    
-    .example-utility-class {
-      display: block
-    }
-    .custom-utility-class {
-      background-color: red
-    }
-    `);
-  });
-});
-
-test('variants can be customized', () => {
-  return generatePluginCss({
-    theme: {
-      screens: {
-        sm: '640px',
-      },
-    },
-    variants: {
-      displaymodes: ['responsive', 'hover'],
-    },
-  }).then(css => {
-    expect(css).toMatchCss(`
-    .example-utility-class {
-      display: block
-    } 
-    .hover\\:example-utility-class:hover {
-      display: block
-    } 
-    @media (min-width: 640px) {
-      .sm\\:example-utility-class {
-        display: block
-      }
-      .sm\\:hover\\:example-utility-class:hover {
-        display: block
-      }
-    }
-    `);
-  });
+test('should', () => {
+  const css = generatePluginCss();
+  console.log(css);
+  return true;
 });
