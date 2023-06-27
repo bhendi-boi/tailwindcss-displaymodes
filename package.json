@@ -3,6 +3,9 @@
   "version": "1.0.4",
   "description": "Provides with variants for different display modes",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@bhendi"
+  },
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
