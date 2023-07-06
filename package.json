@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhendi-boi/tailwindcss-displaymodes.git"
+    "url": "https://github.com/bhendi-boi/tailwindcss-displaymodes.git"
   },
   "bugs": {
     "url": "https://github.com/bhendi-boi/tailwindcss-displaymodes/issues"
