@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-displaymodes",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Provides with variants for different display modes",
   "main": "index.js",
   "publishConfig": {
