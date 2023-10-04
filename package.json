@@ -1,10 +1,11 @@
 {
-  "name": "tailwindcss-displaymodes",
+  "name": "@bhendi-boi/tailwindcss-displaymodes",
   "version": "1.0.8",
   "description": "Provides with variants for different display modes",
   "main": "index.js",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "scripts": {
     "lint": "eslint .",
