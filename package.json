@@ -4,7 +4,7 @@
   "description": "Provides with variants for different display modes",
   "main": "index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@bhendi"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "lint": "eslint .",
@@ -13,7 +13,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "release": "standard-version",
-    "postrelease": "git push --follow-tags origin main"
+    "postrelease": "git push --follow-tags origin main npm publish"
   },
   "husky": {
     "hooks": {
