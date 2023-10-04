@@ -14,7 +14,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "release": "standard-version",
-    "postrelease": "git push --follow-tags origin main npm publish"
+    "postrelease": "git push --follow-tags origin main  && npm publish"
   },
   "husky": {
     "hooks": {
