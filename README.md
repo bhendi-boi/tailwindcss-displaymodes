@@ -1,5 +1,7 @@
 # tailwindcss-displaymodes
 
+![tailwindcss-displaymode](Tailwindcss-displaymodes.png)
+
 The **tailwindcss-displaymodes** plugin is an extension for Tailwind CSS that provides additional variants to apply specific classes when a website is being viewed in different display modes. This guide will walk you through the installation and usage of the plugin.
 
 ## Install the plugin from npm:
