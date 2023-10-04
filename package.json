@@ -4,7 +4,7 @@
   "description": "Provides with variants for different display modes",
   "main": "index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "lint": "eslint .",
