@@ -4,7 +4,7 @@
   "description": "Provides with variants for different display modes",
   "main": "index.js",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org",
+    "registry": "https://registry.npmjs.org/@bhendi-boi%2ftailwindcss-displaymodes",
     "access": "public"
   },
   "scripts": {
