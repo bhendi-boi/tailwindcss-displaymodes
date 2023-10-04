@@ -1,6 +1,6 @@
 {
   "name": "@bhendi-boi/tailwindcss-displaymodes",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Provides with variants for different display modes",
   "main": "index.js",
   "publishConfig": {
